@@ -69,9 +69,10 @@ void deleteNode(Node** head, int data){
 void printList(Node* head){
     Node* curr = head;
     while(curr != NULL){
-        printf("%d ", curr->data);
+        printf("%d -> ", curr->data);
         curr = curr->next;
     }
+    printf("NULL\n");
 }
 
 //释放整个链表,防止内存泄漏
@@ -91,6 +92,14 @@ int main(){
    addLast(&head, 30);   //10 -> 20 -> 30
    addLast(&head, 40);   //10 -> 20 -> 30 -> 40
    printf("初始链表：");
+   printList(head);
+
+   deleteNode(&head, 10);//20 -> 30 -> 40
+   printf("删除10后: ");
+   printList(head);
+
+   deleteNode(&head, 30);//20 -> 40
+   printf("删除30后: ");
    printList(head);
 
    freeList(head);
