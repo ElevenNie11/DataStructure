@@ -1,2 +1,4 @@
 # Java 编译产物
 *.class
+# C 编译
+*.exe

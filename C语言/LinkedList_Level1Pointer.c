@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 //实现一个节点：C语言用结构体来实现
 typedef struct Node{
     int data;
