@@ -69,7 +69,7 @@ void deleteNode(Node** head, int data){
 void printList(Node* head){
     Node* curr = head;
     while(curr != NULL){
-        printf("%d -> ", curr->data);
+        printf("%d ", curr->data);
         curr = curr->next;
     }
 }
