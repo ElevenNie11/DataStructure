@@ -5,7 +5,7 @@
 int queue[MaxSize];
 int front = 0;     //队头指针(队头下标)：下一次dequeue会从这里取
 int rear = 0;      //队尾指针(队尾下标)：下一次enqueue会从这里删
-int count = 0;     //当前队列有几个元素
+int count = 0;     //当前队列有几个元素：因为光靠 front == rear 是判断不出来队列是满还是空的
 
 bool isEmpty(){
     if(count == 0){
@@ -52,7 +52,7 @@ int main(){
     printf("出队：%d\n", dequeue());  //20
     enqueue(40);
     enqueue(50);
-    enqueue(60);
+    enqueue(60);   //60覆盖了下标0的10
     while(!isEmpty()){
         printf("出队：%d ", dequeue()); // 30 40 50 60
     }
