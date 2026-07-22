@@ -3,7 +3,7 @@ import java.util.Deque;
 import java.util.ArrayDeque;
 
 public class Queue {
-    static void main(String[] args){
+    public static void main(String[] args){
         Deque<Integer> queue = new ArrayDeque<>();
         //1. 从队尾插入：等价于addLast()
         queue.offer(10);
