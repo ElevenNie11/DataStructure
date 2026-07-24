@@ -13,7 +13,7 @@ public class Practice03_Fibonacci{
         Scanner Input = new Scanner(System.in);
         System.out.print("请输入一个数字：");
         int n = Input.nextInt();
-        System.out.print("斐波那契数列函数Fibonacci(x)的值：" + Fibonacci(n));
+        System.out.printf("斐波那契数列函数Fibonacci(%d)的值：%d", n, Fibonacci(n));
         Input.close();
     }
 }
