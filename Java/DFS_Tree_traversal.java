@@ -1,6 +1,6 @@
 package Java;
 
-public class Tree_traversal {
+public class DFS_Tree_traversal {
     //1. 深度优先遍历（DFS）：前序遍历(根→左→右)
     static void preorder(TreeNode root){
         if(root == null){  //base case
